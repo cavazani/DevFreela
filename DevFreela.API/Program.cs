@@ -1,5 +1,7 @@
+using DevFreela.API.ExceptionHandler;
 using DevFreela.API.Models;
 using DevFreela.API.Services;
+using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +12,9 @@ builder.Services.Configure<FreelanceTotalCostConfig>(
     );
 
 builder.Services.AddScoped<IConfigService, ConfigService>();
+
+builder.Services.AddExceptionHandler<ApiExceptionHandler>();
+builder.Services.AddProblemDetails();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
