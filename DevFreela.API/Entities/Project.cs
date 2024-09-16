@@ -4,7 +4,7 @@ namespace DevFreela.API.Entities {
     public class Project : BaseEntity
     {
         protected Project() { }
-        public Project(string title, string description, string idClient, User client, int idFreelancer, decimal totalCost) : base()
+        public Project(string title, string description, int idClient, User client, int idFreelancer, decimal totalCost) : base()
          {
             Title = title;
             Description = description;
@@ -18,7 +18,7 @@ namespace DevFreela.API.Entities {
 
         public string Title { get; private set; }
         public string Description { get; private set; }
-        public string IdClient { get; private set; }
+        public int IdClient { get; private set; }
         public User Client { get; private set; }
         public int IdFreelancer { get; private set; }
         public User Freelancer { get; private set; }
