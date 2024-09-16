@@ -1,7 +1,7 @@
 ﻿namespace DevFreela.API.Entities {
     public class ProjectComment : BaseEntity
     {
-        public ProjectComment(string content, int idproject, int idUder)
+        public ProjectComment(string content, int idproject, int idUder) : base()
         {
            Content = content;
            IdProject = idproject;
