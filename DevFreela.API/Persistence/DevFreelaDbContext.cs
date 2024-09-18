@@ -15,9 +15,58 @@ namespace DevFreela.API.Persistence {
         public DbSet<UserSkill> UserSkills { get; set; }
         public DbSet<ProjectComment> ProjectComments { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder builder) 
-        {
+        protected override void OnModelCreating(ModelBuilder builder) {
+
+            builder.Entity<Skill>(e => 
+            {
+                e.HasKey(s => s.Id);
+            });
+
+            builder.Entity<UserSkill>(e => 
+            {
+                e.HasKey(us => us.Id);
+                e.HasOne(s => s.Skill)
+                    .WithMany(u => u.UsersSkills)
+                    .HasForeignKey(s => s.IdSkill)
+                    .OnDelete(DeleteBehavior.Restrict);
+            });
+
+            builder.Entity<ProjectComment>(e => 
+            {
+                e.HasKey(p => p.Id);
+                e.HasOne(p => p.Project)
+                    .WithMany(p => p.Comments)
+                    .HasForeignKey(p => p.IdProject)
+                    .OnDelete(DeleteBehavior.Restrict);
+
+            });
+
+            builder.Entity<User>(e => 
+            {
+                e.HasKey(s => s.Id);
+                e.HasMany(u => u.Skills)
+                    .WithOne(us => us.User)
+                    .HasForeignKey(p => p.IdUser)
+                    .OnDelete(DeleteBehavior.Restrict);
+            });
+
+            builder.Entity<Project>(e => 
+            {
+                e.HasKey(s => s.Id);
+                e.HasOne(p => p.Freelancer)
+                    .WithMany(f => f.FreelanceProjects)
+                    .HasForeignKey(p => p.IdFreelancer)
+                    .OnDelete(DeleteBehavior.Restrict);
+
+                e.HasOne(p => p.Client)
+                    .WithMany(c => c.OwnedProjects)
+                    .HasForeignKey(p => p.IdClient)
+                    .OnDelete(DeleteBehavior.Restrict);
+
+            });
+
             base.OnModelCreating(builder);
         }
+
     }
 }
