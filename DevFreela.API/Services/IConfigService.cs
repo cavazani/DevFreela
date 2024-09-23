@@ -1,14 +1,11 @@
 ﻿namespace DevFreela.API.Services {
-    public interface IConfigService 
-    {
+    public interface IConfigService {
         int GetValue();
     }
 
-    public class ConfigService : IConfigService 
-    {
+    public class ConfigService : IConfigService {
         private int _value;
-        public int GetValue() 
-        {
+        public int GetValue() {
             _value++;
 
             return _value;
