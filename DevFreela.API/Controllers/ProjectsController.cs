@@ -15,7 +15,13 @@ namespace DevFreela.API.Controllers {
             _context = context;
         }
 
-        // GET api/projects?search=crm
+        /// <summary>
+        /// Api responsavel por filtrar pelo nome do title ou description
+        /// </summary>
+        /// <param name="search">Termo de busca utilizado para filtrar pelo título ou descrição dos projetos. Se vazio, retorna todos os projetos.</param>
+        /// <param name="page">Número da página atual para a paginação. A contagem começa em 0.</param>
+        /// <param name="size">Quantidade de itens por página.</param>
+        /// <returns>Retorna uma lista de projetos filtrados, com base nos critérios de busca e paginação.</returns>
         [HttpGet]
         public IActionResult Get(string search = "", int page = 0, int size = 3) {
             var projects = _context.Projects

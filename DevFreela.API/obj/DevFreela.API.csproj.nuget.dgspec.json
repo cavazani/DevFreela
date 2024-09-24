@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projetos\\LuisDev\\Projetos\\DevFreela\\DevFreela.API\\DevFreela.API.csproj": {}
+    "c:\\Projetos\\LuisDev\\Projetos\\DevFreela\\DevFreela.API\\DevFreela.API.csproj": {}
   },
   "projects": {
-    "C:\\Projetos\\LuisDev\\Projetos\\DevFreela\\DevFreela.API\\DevFreela.API.csproj": {
+    "c:\\Projetos\\LuisDev\\Projetos\\DevFreela\\DevFreela.API\\DevFreela.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\LuisDev\\Projetos\\DevFreela\\DevFreela.API\\DevFreela.API.csproj",
+        "projectUniqueName": "c:\\Projetos\\LuisDev\\Projetos\\DevFreela\\DevFreela.API\\DevFreela.API.csproj",
         "projectName": "DevFreela.API",
-        "projectPath": "C:\\Projetos\\LuisDev\\Projetos\\DevFreela\\DevFreela.API\\DevFreela.API.csproj",
+        "projectPath": "c:\\Projetos\\LuisDev\\Projetos\\DevFreela\\DevFreela.API\\DevFreela.API.csproj",
         "packagesPath": "C:\\Users\\Gabriel Cavazani\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\LuisDev\\Projetos\\DevFreela\\DevFreela.API\\obj\\",
+        "outputPath": "c:\\Projetos\\LuisDev\\Projetos\\DevFreela\\DevFreela.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Gabriel Cavazani\\AppData\\Roaming\\NuGet\\NuGet.Config",
