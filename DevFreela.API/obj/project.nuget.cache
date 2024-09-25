@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8LycISBY3mI=",
+  "dgSpecHash": "lXWzJX4Jb5A=",
   "success": true,
-  "projectFilePath": "c:\\Projetos\\LuisDev\\Projetos\\DevFreela\\DevFreela.API\\DevFreela.API.csproj",
+  "projectFilePath": "C:\\Projetos\\LuisDev\\Projetos\\DevFreela\\DevFreela.API\\DevFreela.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Gabriel Cavazani\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Gabriel Cavazani\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
