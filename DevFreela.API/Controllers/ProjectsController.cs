@@ -37,7 +37,8 @@ namespace DevFreela.API.Controllers {
 
         // GET api/projects/1234
         [HttpGet("{id}")]
-        public IActionResult GetById(int id) {
+        public IActionResult GetById(int id) 
+        {
             var project = _context.Projects
                 .Include(p => p.Client)
                 .Include(p => p.Freelancer)
