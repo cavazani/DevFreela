@@ -35,7 +35,7 @@
     "Parameters": [
       {
         "Name": "model",
-        "Type": "DevFreela.API.Models.CreateProjectInputModel",
+        "Type": "DevFreela.Application.Models.CreateProjectInputModel",
         "IsRequired": true
       }
     ],
@@ -72,7 +72,7 @@
       },
       {
         "Name": "model",
-        "Type": "DevFreela.API.Models.UpdateProjectInputModel",
+        "Type": "DevFreela.Application.Models.UpdateProjectInputModel",
         "IsRequired": true
       }
     ],
@@ -109,7 +109,7 @@
       },
       {
         "Name": "model",
-        "Type": "DevFreela.API.Models.CreateProjectCommentInputModel",
+        "Type": "DevFreela.Application.Models.CreateProjectCommentInputModel",
         "IsRequired": true
       }
     ],
@@ -167,7 +167,7 @@
     "Parameters": [
       {
         "Name": "model",
-        "Type": "DevFreela.API.Models.CreateSkillInputModel",
+        "Type": "DevFreela.Application.Models.CreateSkillInputModel",
         "IsRequired": true
       }
     ],
@@ -183,7 +183,7 @@
     "Parameters": [
       {
         "Name": "model",
-        "Type": "DevFreela.API.Models.CreateUserInputModel",
+        "Type": "DevFreela.Application.Models.CreateUserInputModel",
         "IsRequired": true
       }
     ],
@@ -241,7 +241,7 @@
       },
       {
         "Name": "model",
-        "Type": "DevFreela.API.Models.UserSkillsInputModel",
+        "Type": "DevFreela.Application.Models.UserSkillsInputModel",
         "IsRequired": true
       }
     ],

@@ -7,8 +7,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\DevFreela.Core\DevFreela.Core.csproj" />
     <ProjectReference Include="..\DevFreela.Infrastructure\DevFreela.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Commands\InsertProject\" />
+    <Folder Include="Commands\StartProject\" />
+    <Folder Include="Commands\UpdateProject\" />
+    <Folder Include="Queries\GetAllProject\" />
+    <Folder Include="Queries\GetProjectById\" />
   </ItemGroup>
 
 </Project>

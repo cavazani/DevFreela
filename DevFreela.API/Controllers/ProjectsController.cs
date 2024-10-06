@@ -1,19 +1,16 @@
-﻿using DevFreela.Core.Entities;
-using DevFreela.Application.Models;
-using DevFreela.Infrastructure.Persistence;
+﻿using DevFreela.Application.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using DevFreela.Application.Services;
 
 namespace DevFreela.API.Controllers {
     [ApiController]
     [Route("api/projects")]
-    public class ProjectsController : ControllerBase {
-        private readonly DevFreelaDbContext _context;
+    public class ProjectsController : ControllerBase 
+     {
+
         private readonly IProjectService _service;
-        public ProjectsController(DevFreelaDbContext context, IProjectService service) 
+        public ProjectsController(IProjectService service) 
         {
-            _context = context;
             _service = service;
         }
 
