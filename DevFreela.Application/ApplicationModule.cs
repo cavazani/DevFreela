@@ -1,5 +1,7 @@
 ﻿using DevFreela.Application.Commands.InsertProject;
+using DevFreela.Application.Models;
 using DevFreela.Application.Services;
+using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -30,6 +32,7 @@ namespace DevFreela.Application {
             //RegisterServicesFromAssemblyContaining vai adicionar todos os serviçoes que estão implementando o IRequest e IRequestHandler do Assembly
             //Não tem a necessidade de adicionar um por um
             services.AddMediatR(config => config.RegisterServicesFromAssemblyContaining<InsertProjectCommand>());
+            services.AddTransient<IPipelineBehavior<InsertProjectCommand, ResultViewModel<int>>, ValidateInsertProjectCommandBehavior>();
 
             return services;
         }

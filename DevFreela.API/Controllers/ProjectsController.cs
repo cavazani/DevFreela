@@ -33,7 +33,7 @@ namespace DevFreela.API.Controllers {
         /// <param name="size">Quantidade de itens por página.</param>
         /// <returns>Retorna uma lista de projetos filtrados, com base nos critérios de busca e paginação.</returns>
         [HttpGet]
-        public async Task<IActionResult> Get(string search = "", int page = 0, int size = 3) 
+        public async Task<IActionResult> Get(string search = "") 
         {
            // var result = _service.GetAll();
 
@@ -62,6 +62,11 @@ namespace DevFreela.API.Controllers {
         public async Task<IActionResult> Post(InsertProjectCommand command) 
         {
             var result = await _mediator.Send(command);
+
+            if (!result.IsSuccess) 
+            {
+                return BadRequest(result.Message);
+            }
 
             return CreatedAtAction(nameof(GetById), new { id = result.Data }, command);
         }
