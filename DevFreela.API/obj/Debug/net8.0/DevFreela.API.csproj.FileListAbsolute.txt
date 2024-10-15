@@ -144,3 +144,6 @@ C:\Projetos\LuisDev\Projetos\DevFreela\DevFreela.API\obj\Debug\net8.0\DevFreela.
 C:\Projetos\LuisDev\Projetos\DevFreela\DevFreela.API\obj\Debug\net8.0\ref\DevFreela.API.dll
 C:\Projetos\LuisDev\Projetos\DevFreela\DevFreela.API\bin\Debug\net8.0\MediatR.dll
 C:\Projetos\LuisDev\Projetos\DevFreela\DevFreela.API\bin\Debug\net8.0\MediatR.Contracts.dll
+C:\Projetos\LuisDev\Projetos\DevFreela\DevFreela.API\bin\Debug\net8.0\FluentValidation.dll
+C:\Projetos\LuisDev\Projetos\DevFreela\DevFreela.API\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+C:\Projetos\LuisDev\Projetos\DevFreela\DevFreela.API\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
