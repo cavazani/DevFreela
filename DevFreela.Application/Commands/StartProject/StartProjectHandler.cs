@@ -2,10 +2,8 @@
 using DevFreela.Core.Repositories;
 using DevFreela.Infrastructure.Persistence;
 using MediatR;
-using Microsoft.EntityFrameworkCore;
 
-namespace DevFreela.Application.Commands.StartProject 
-{
+namespace DevFreela.Application.Commands.StartProject {
     public class StartProjectHandler : IRequestHandler<StartProjectCommand, ResultViewModel> 
     {
         private readonly DevFreelaDbContext _context;

@@ -1,18 +1,10 @@
-﻿using Azure.Core;
-using DevFreela.Application.Models;
+﻿using DevFreela.Application.Models;
 using DevFreela.Core.Entities;
 using DevFreela.Core.Repositories;
 using DevFreela.Infrastructure.Persistence;
 using MediatR;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace DevFreela.Application.Commands.InsertCommaent 
-{
+namespace DevFreela.Application.Commands.InsertCommaent {
     public class InsertCommentHandler : IRequestHandler<InsertCommentCommand, ResultViewModel> 
     {
         private readonly DevFreelaDbContext _context;

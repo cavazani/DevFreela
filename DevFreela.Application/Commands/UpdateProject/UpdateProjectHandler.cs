@@ -2,10 +2,8 @@
 using DevFreela.Core.Repositories;
 using DevFreela.Infrastructure.Persistence;
 using MediatR;
-using Microsoft.EntityFrameworkCore;
 
-namespace DevFreela.Application.Commands.UpdateProject 
-{
+namespace DevFreela.Application.Commands.UpdateProject {
     public class UpdateProjectHandler : IRequestHandler<UpdateProjectCommand, ResultViewModel> 
     {
         private readonly DevFreelaDbContext _context;

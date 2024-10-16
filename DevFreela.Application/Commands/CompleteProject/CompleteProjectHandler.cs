@@ -1,16 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DevFreela.Application.Models;
+﻿using DevFreela.Application.Models;
 using DevFreela.Core.Repositories;
 using DevFreela.Infrastructure.Persistence;
 using MediatR;
-using Microsoft.EntityFrameworkCore;
 
-namespace DevFreela.Application.Commands.CompleteProject 
-{
+namespace DevFreela.Application.Commands.CompleteProject {
     public class CompleteProjectHandler : IRequestHandler<CompleteProjectCommand, ResultViewModel> 
     {
         private readonly DevFreelaDbContext _context;

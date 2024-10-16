@@ -1,17 +1,9 @@
-﻿using Azure.Core;
-using DevFreela.Application.Models;
+﻿using DevFreela.Application.Models;
 using DevFreela.Core.Repositories;
 using DevFreela.Infrastructure.Persistence;
 using MediatR;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace DevFreela.Application.Queries.GetProjectById 
-{
+namespace DevFreela.Application.Queries.GetProjectById {
     public class GetProjectByIdHandler : IRequestHandler<GetProjectByIdQuery, ResultViewModel<ProjectViewModel>> 
     {
         private readonly DevFreelaDbContext _context;

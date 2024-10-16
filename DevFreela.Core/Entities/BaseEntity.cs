@@ -1,4 +1,5 @@
-﻿namespace DevFreela.Core.Entities {
+﻿namespace DevFreela.Core.Entities 
+{
     public abstract class BaseEntity 
     {
         protected BaseEntity() 

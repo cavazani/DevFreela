@@ -1,16 +1,9 @@
 ﻿using DevFreela.Application.Models;
-using DevFreela.Application.Notification.ProjectCreated;
 using DevFreela.Core.Repositories;
 using DevFreela.Infrastructure.Persistence;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace DevFreela.Application.Commands.InsertProject 
-{
+namespace DevFreela.Application.Commands.InsertProject {
     public class InsertProjectHandler : IRequestHandler<InsertProjectCommand, ResultViewModel<int>> 
     {
         private readonly DevFreelaDbContext _context;
