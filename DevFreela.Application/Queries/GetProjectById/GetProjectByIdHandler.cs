@@ -10,7 +10,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DevFreela.Application.Queries.GetProjectById {
+namespace DevFreela.Application.Queries.GetProjectById 
+{
     public class GetProjectByIdHandler : IRequestHandler<GetProjectByIdQuery, ResultViewModel<ProjectViewModel>> 
     {
         private readonly DevFreelaDbContext _context;

@@ -6,7 +6,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DevFreela.Application.Commands.UpdateProject {
+namespace DevFreela.Application.Commands.UpdateProject 
+{
     public class UpdateProjectCommand : IRequest<ResultViewModel>
     {
         public int IdProject { get; set; }

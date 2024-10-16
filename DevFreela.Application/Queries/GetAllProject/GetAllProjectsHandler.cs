@@ -4,7 +4,8 @@ using DevFreela.Infrastructure.Persistence;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace DevFreela.Application.Queries.GetAllProject {
+namespace DevFreela.Application.Queries.GetAllProject 
+{
     public class GetAllProjectsHandler : IRequestHandler<GetAllProjectsQuery, ResultViewModel<List<ProjectItemViewModel>>> 
     {
         private readonly DevFreelaDbContext _context;

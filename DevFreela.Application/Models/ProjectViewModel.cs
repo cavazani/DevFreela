@@ -1,8 +1,12 @@
 ﻿using DevFreela.Core.Entities;
 
-namespace DevFreela.Application.Models {
-    public class ProjectViewModel {
-        public ProjectViewModel(int id, string title, string description, int idClient, int idFreelancer, string clientName, string freelancerName, decimal totalCost, List<ProjectComment> comments) {
+namespace DevFreela.Application.Models 
+{
+    public class ProjectViewModel 
+    {
+        public ProjectViewModel(int id, string title, string description, int idClient, int idFreelancer,
+                string clientName, string freelancerName, decimal totalCost, List<ProjectComment> comments) 
+        {
             Id = id;
             Title = title;
             Description = description;

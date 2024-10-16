@@ -6,7 +6,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DevFreela.Application.Queries.GetAllProject {
+namespace DevFreela.Application.Queries.GetAllProject 
+{
     public class GetAllProjectsQuery : IRequest<ResultViewModel<List<ProjectItemViewModel>>>
     {
 

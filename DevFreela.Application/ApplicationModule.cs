@@ -5,7 +5,8 @@ using FluentValidation.AspNetCore;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace DevFreela.Application {
+namespace DevFreela.Application 
+{
     public static class ApplicationModule 
     {
         public static IServiceCollection AddApplication(this IServiceCollection services) 

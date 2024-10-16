@@ -6,8 +6,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DevFreela.Application.Validators {
-    public class InsertProjectValidator : AbstractValidator<InsertProjectCommand> {
+namespace DevFreela.Application.Validators 
+{
+    public class InsertProjectValidator : AbstractValidator<InsertProjectCommand> 
+    {
         public InsertProjectValidator() 
         {
             RuleFor(p => p.Title)

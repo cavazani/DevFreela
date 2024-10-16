@@ -9,7 +9,8 @@ using DevFreela.Infrastructure.Persistence;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace DevFreela.Application.Commands.CompleteProject {
+namespace DevFreela.Application.Commands.CompleteProject 
+{
     public class CompleteProjectHandler : IRequestHandler<CompleteProjectCommand, ResultViewModel> 
     {
         private readonly DevFreelaDbContext _context;
@@ -27,7 +28,8 @@ namespace DevFreela.Application.Commands.CompleteProject {
             //Utilizando padrão Repository
             var project = await _repository.GetById(request.Id);
 
-            if (project is null) {
+            if (project is null) 
+            {
                 return ResultViewModel.Error("Projeto não existe.");
             }
 

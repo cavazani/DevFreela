@@ -4,7 +4,8 @@ using DevFreela.Infrastructure.Persistence;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace DevFreela.Application.Commands.DeleteProject {
+namespace DevFreela.Application.Commands.DeleteProject 
+{
     public class DeleteProjectHandler : IRequestHandler<DeleteProjectCommand, ResultViewModel> 
     {
         private readonly DevFreelaDbContext _context;
@@ -22,7 +23,8 @@ namespace DevFreela.Application.Commands.DeleteProject {
             //Utilizando padrão Repository
             var project = await _repository.GetById(request.Id);
 
-            if (project is null) {
+            if (project is null) 
+            {
                 return ResultViewModel.Error("Projeto não existe.");
             }
 

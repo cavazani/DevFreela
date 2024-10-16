@@ -1,6 +1,8 @@
 ﻿namespace DevFreela.Core.Entities {
-    public abstract class BaseEntity {
-        protected BaseEntity() {
+    public abstract class BaseEntity 
+    {
+        protected BaseEntity() 
+        {
             CreatedAt = DateTime.Now;
             IsDeleted = false;
         }

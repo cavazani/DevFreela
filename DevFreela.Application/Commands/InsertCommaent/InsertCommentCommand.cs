@@ -6,7 +6,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DevFreela.Application.Commands.InsertCommaent {
+namespace DevFreela.Application.Commands.InsertCommaent 
+{
     public class InsertCommentCommand : IRequest<ResultViewModel>
     {
         public string Content { get; set; }

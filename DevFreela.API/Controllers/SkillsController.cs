@@ -4,26 +4,38 @@ using DevFreela.Infrastructure.Persistence;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace DevFreela.API.Controllers {
+namespace DevFreela.API.Controllers 
+{
     [Route("api/skills")]
     [ApiController]
-    public class SkillsController : ControllerBase {
+    public class SkillsController : ControllerBase 
+    {
         private readonly DevFreelaDbContext _context;
-        public SkillsController(DevFreelaDbContext context) {
+        public SkillsController(DevFreelaDbContext context) 
+        {
             _context = context;
         }
 
-        // GET api/skills
+        /// <summary>
+        /// Filtrar todos os skill criados
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
-        public IActionResult GetAll() {
+        public IActionResult GetAll() 
+        {
             var skills = _context.Skills.ToList();
 
             return Ok(skills);
         }
 
-        // POST api/skills
+        /// <summary>
+        /// Adiciona novo skill
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [HttpPost]
-        public IActionResult Post(CreateSkillInputModel model) {
+        public IActionResult Post(CreateSkillInputModel model) 
+        {
             var skill = new Skill(model.Description);
 
             _context.Skills.Add(skill);

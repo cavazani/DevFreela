@@ -4,7 +4,8 @@ using DevFreela.Infrastructure.Persistence;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace DevFreela.Application.Commands.UpdateProject {
+namespace DevFreela.Application.Commands.UpdateProject 
+{
     public class UpdateProjectHandler : IRequestHandler<UpdateProjectCommand, ResultViewModel> 
     {
         private readonly DevFreelaDbContext _context;
@@ -22,7 +23,8 @@ namespace DevFreela.Application.Commands.UpdateProject {
             //Utilizando padrão Repository
             var project = await _repository.GetById(request.IdProject);
 
-            if (project is null) {
+            if (project is null) 
+            {
                 return ResultViewModel.Error("Projeto não existe.");
             }
 

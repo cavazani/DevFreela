@@ -6,7 +6,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DevFreela.Application.Commands.CompleteProject {
+namespace DevFreela.Application.Commands.CompleteProject 
+{
     public class CompleteProjectCommand : IRequest<ResultViewModel>
     {
         public CompleteProjectCommand(int id) 

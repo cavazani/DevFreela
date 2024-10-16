@@ -1,10 +1,12 @@
 ﻿using DevFreela.Core.Enums;
 
 namespace DevFreela.Core.Entities {
-    public class Project : BaseEntity {
+    public class Project : BaseEntity 
+    {
         protected Project() { }
         public Project(string title, string description, int idClient, int idFreelancer, decimal totalCost)
-            : base() {
+            : base() 
+        {
             Title = title;
             Description = description;
             IdClient = idClient;
@@ -27,33 +29,42 @@ namespace DevFreela.Core.Entities {
         public ProjectStatusEnum Status { get; private set; }
         public List<ProjectComment> Comments { get; private set; }
 
-        public void Cancel() {
-            if (Status == ProjectStatusEnum.InProgress || Status == ProjectStatusEnum.Suspended) {
+        public void Cancel() 
+        {
+            if (Status == ProjectStatusEnum.InProgress || Status == ProjectStatusEnum.Suspended) 
+            {
                 Status = ProjectStatusEnum.Cancelled;
             }
         }
 
-        public void Start() {
-            if (Status == ProjectStatusEnum.Created) {
+        public void Start() 
+        {
+            if (Status == ProjectStatusEnum.Created) 
+            {
                 Status = ProjectStatusEnum.InProgress;
                 StartedAt = DateTime.Now;
             }
         }
 
-        public void Complete() {
-            if (Status == ProjectStatusEnum.PaymentPending || Status == ProjectStatusEnum.InProgress) {
+        public void Complete() 
+        {
+            if (Status == ProjectStatusEnum.PaymentPending || Status == ProjectStatusEnum.InProgress) 
+            {
                 Status = ProjectStatusEnum.Completed;
                 CompletedAt = DateTime.Now;
             }
         }
 
-        public void SetPaymentPending() {
-            if (Status == ProjectStatusEnum.InProgress) {
+        public void SetPaymentPending() 
+        {
+            if (Status == ProjectStatusEnum.InProgress) 
+            {
                 Status = ProjectStatusEnum.PaymentPending;
             }
         }
 
-        public void Update(string title, string description, decimal totalCost) {
+        public void Update(string title, string description, decimal totalCost) 
+        {
             Title = title;
             Description = description;
             TotalCost = totalCost;

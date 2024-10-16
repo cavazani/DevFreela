@@ -11,7 +11,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DevFreela.Application.Commands.InsertCommaent {
+namespace DevFreela.Application.Commands.InsertCommaent 
+{
     public class InsertCommentHandler : IRequestHandler<InsertCommentCommand, ResultViewModel> 
     {
         private readonly DevFreelaDbContext _context;
@@ -34,7 +35,8 @@ namespace DevFreela.Application.Commands.InsertCommaent {
             //}
 
             //Utilizando padrão Repository
-            if (!exists) {
+            if (!exists) 
+            {
                 return ResultViewModel.Error("Projeto não existe.");
             }
 
