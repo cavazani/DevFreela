@@ -16,8 +16,9 @@ O projeto foi desenvolvido como uma WebAPI utilizando .NET 8 e C# com o ASP.NET 
  - Padrão Repository
  - Padrões de Refatoração
  - FluentValidation
+   
 
-## Swagger
+## Swagger <img src="https://github.com/user-attachments/assets/87489c25-2723-4788-ad5f-c2cb926265af" width="19" />
 
 Swagger é um framework que facilita o desenvolvimento e a documentação de APIs REST, independentemente da linguagem de programação utilizada. Ele oferece uma interface gráfica que exibe todos os endpoints da API e permite a execução direta de requisições. Além de fornecer uma documentação completa da API, o Swagger também simplifica o consumo de serviços, ajudando a testar e validar os métodos implementados nos controllers da API.
 
