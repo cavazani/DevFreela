@@ -7,7 +7,12 @@ C:\Projetos\LuisDev\Projetos\DevFreela\DevFreela.API\bin\Debug\net8.0\DevFreela.
 C:\Projetos\LuisDev\Projetos\DevFreela\DevFreela.API\bin\Debug\net8.0\DevFreela.API.pdb
 C:\Projetos\LuisDev\Projetos\DevFreela\DevFreela.API\bin\Debug\net8.0\Azure.Core.dll
 C:\Projetos\LuisDev\Projetos\DevFreela\DevFreela.API\bin\Debug\net8.0\Azure.Identity.dll
+C:\Projetos\LuisDev\Projetos\DevFreela\DevFreela.API\bin\Debug\net8.0\FluentValidation.dll
+C:\Projetos\LuisDev\Projetos\DevFreela\DevFreela.API\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+C:\Projetos\LuisDev\Projetos\DevFreela\DevFreela.API\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Projetos\LuisDev\Projetos\DevFreela\DevFreela.API\bin\Debug\net8.0\Humanizer.dll
+C:\Projetos\LuisDev\Projetos\DevFreela\DevFreela.API\bin\Debug\net8.0\MediatR.dll
+C:\Projetos\LuisDev\Projetos\DevFreela\DevFreela.API\bin\Debug\net8.0\MediatR.Contracts.dll
 C:\Projetos\LuisDev\Projetos\DevFreela\DevFreela.API\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Projetos\LuisDev\Projetos\DevFreela\DevFreela.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
 C:\Projetos\LuisDev\Projetos\DevFreela\DevFreela.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
@@ -142,8 +147,3 @@ C:\Projetos\LuisDev\Projetos\DevFreela\DevFreela.API\obj\Debug\net8.0\refint\Dev
 C:\Projetos\LuisDev\Projetos\DevFreela\DevFreela.API\obj\Debug\net8.0\DevFreela.API.pdb
 C:\Projetos\LuisDev\Projetos\DevFreela\DevFreela.API\obj\Debug\net8.0\DevFreela.API.genruntimeconfig.cache
 C:\Projetos\LuisDev\Projetos\DevFreela\DevFreela.API\obj\Debug\net8.0\ref\DevFreela.API.dll
-C:\Projetos\LuisDev\Projetos\DevFreela\DevFreela.API\bin\Debug\net8.0\MediatR.dll
-C:\Projetos\LuisDev\Projetos\DevFreela\DevFreela.API\bin\Debug\net8.0\MediatR.Contracts.dll
-C:\Projetos\LuisDev\Projetos\DevFreela\DevFreela.API\bin\Debug\net8.0\FluentValidation.dll
-C:\Projetos\LuisDev\Projetos\DevFreela\DevFreela.API\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
-C:\Projetos\LuisDev\Projetos\DevFreela\DevFreela.API\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll

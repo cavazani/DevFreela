@@ -1,1 +1,49 @@
 .vs/
+
+# Build results
+bin/
+obj/
+
+# Logs e arquivos temporários
+*.log
+logs/
+**/*.swp
+**/*.swo
+
+# Arquivos do Visual Studio
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.cache
+*.sln.docstates
+
+# Configurações do Rider/JetBrains
+.idea/
+*.dotCover
+*.sln.iml
+
+# Arquivos gerados pelo NuGet
+*.nupkg
+*.snupkg
+packages/
+project.lock.json
+project.assets.json
+
+# Arquivos de publicação
+publish/
+wwwroot/
+
+# Configurações e Segredos (⚠️ Importante para segurança)
+secrets.json
+appsettings.Development.json
+appsettings.Local.json
+.env
+.env.local
+
+# Dependências do Node.js (se o projeto usar frontend com React/Angular)
+node_modules/
+dist/
+
+# Docker (se aplicável)
+docker-compose.override.yml
